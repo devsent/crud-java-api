@@ -1,10 +1,11 @@
 package dio.crud.controller;
 
-import dio.crud.model.Customer;
-import dio.crud.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import dio.crud.model.Customer;
+import dio.crud.service.CustomerService;
 
 /**
  * A Facade that integrates all HTTP methods used to make requests from this
