@@ -1,9 +1,8 @@
 package dio.crud.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.sun.istack.NotNull;
+
+import javax.persistence.*;
 
 /**
  * Entity responsible for querying and updating the "Customer" table
@@ -17,10 +16,14 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @NotNull
     private String name;
 
+    @NotNull
+    @Column(unique = true)
     private String email;
 
+    @NotNull
     private String password;
 
     public Long getId() {
