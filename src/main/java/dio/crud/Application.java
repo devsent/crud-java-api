@@ -6,9 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * A CRUD REST API created using Spring Initializr.
  * Dependencies added:
- * - Spring Data JPA
- * - Spring Web
  * - H2 Database
+ * - Spring Data JPA
+ * - Spring Security
+ * - Spring Web
  *
  * @author devsent
  */
