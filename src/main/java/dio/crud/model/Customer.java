@@ -1,7 +1,5 @@
 package dio.crud.model;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
 
 /**
@@ -16,14 +14,14 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @NotNull
+
+    @Column(nullable = false)
     private String name;
 
-    @NotNull
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String email;
 
-    @NotNull
+    @Column(nullable = false)
     private String password;
 
     public Long getId() {

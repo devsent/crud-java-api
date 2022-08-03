@@ -33,7 +33,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     // Checks if there is a user in the database with a specific ID.
     @Override
-    public Customer findById(Long id){
+    public Customer findById(Long id) {
         Optional<Customer> customer = customerRepository.findById(id);
         return customer.get();
     }

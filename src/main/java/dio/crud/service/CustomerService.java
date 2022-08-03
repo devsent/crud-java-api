@@ -11,8 +11,12 @@ import dio.crud.model.Customer;
 
 public interface CustomerService {
         Iterable<Customer> findAll();
+
         Customer findById(Long id);
+
         void create(Customer customer);
+
         void update(Long id, Customer customer);
+
         void delete(Long id);
 }
